@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+    <title>Vasegh Kala Luxury Catalog</title>
+    
+    <!-- PWA / Mobile App Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#F9F5EC">
+    
+    <!-- App Icon (Uses the Cover Image with reliable link) -->
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/16RLSVHtZabmzHquFBzbeUM3kRH-uUnEV=w500">
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/16RLSVHtZabmzHquFBzbeUM3kRH-uUnEV=w500">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                100: '#F9F1D8',
+                200: '#F0DEAA',
+                300: '#E6CB7D',
+                400: '#DDB853',
+                500: '#D4A52C', // Base Gold
+                600: '#AA8423',
+                700: '#80631B',
+                800: '#554212',
+                900: '#2B2109',
+              },
+              cream: {
+                50: '#FDFBF7',
+                100: '#F9F5EC',
+                200: '#F2EADD',
+                900: '#2C2A26'
+              }
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              persian: ['Noto Naskh Arabic', 'serif'],
+            },
+            boxShadow: {
+              'glossy': '0 10px 30px -5px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2)',
+              'inner-spine': 'inset 20px 0 30px -10px rgba(0,0,0,0.1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9F5EC; /* cream-100 */
+        overflow: hidden; /* Prevent scrolling */
+        touch-action: none; /* Prevent standard browser gestures */
+        -webkit-tap-highlight-color: transparent; /* Remove blue tap highlight on mobile */
+      }
+      /* Hide scrollbar */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
